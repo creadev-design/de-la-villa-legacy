@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
         unmuteBtn.classList.add("is-hidden");
       }
 
-      if (homeVideo.currentTime >= 83.95) {
+      if (homeVideo.currentTime >= 87.5) {
         // If not in limited drop mode, always show the button
         if (!SHOPIFY_CONFIG.limitedDropMode) {
           shopNowBtn.classList.remove("is-hidden");
@@ -183,9 +183,9 @@ document.addEventListener("DOMContentLoaded", () => {
         storeLink.style.display = "";
       }
 
-      // For Shop Now button, respect the video timing (83.95s)
+      // For Shop Now button, respect the video timing (87.5s)
       if (shopNowBtn && homeVideo) {
-        if (homeVideo.currentTime >= 83.95) {
+        if (homeVideo.currentTime >= 87.5) {
           shopNowBtn.classList.remove("is-hidden");
           shopNowBtn.style.display = "";
           // Hide store link when Shop Now appears
@@ -223,7 +223,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     } else {
       // Show appropriate shop elements when shop is open
-      if (shopNowBtn && homeVideo && homeVideo.currentTime >= 83.95) {
+      if (shopNowBtn && homeVideo && homeVideo.currentTime >= 87.5) {
         // Show Shop Now button when video reaches timestamp
         shopNowBtn.classList.remove("is-hidden");
         shopNowBtn.style.display = "";
