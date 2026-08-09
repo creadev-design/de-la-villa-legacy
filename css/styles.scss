@@ -1397,6 +1397,19 @@ img {
         margin: 0.1em 0.15em 0 0;
       }
     }
+
+    &.tabloid__dropcap {
+      text-indent: 0;
+
+      &::first-letter {
+        font-size: 3rem;
+        font-weight: 700;
+        color: $theme-accent;
+        float: left;
+        line-height: 0.8;
+        margin: 0.1em 0.15em 0 0;
+      }
+    }
   }
 }
 
